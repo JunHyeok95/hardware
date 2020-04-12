@@ -1,12 +1,12 @@
 var util = require('util');
-var bleno = require('../..');
+var bleno = require('../');
 
-var rasp = require('./rsap');
+var rasp = require('./rasp');
 var RaspService = require('./rasp-service');
 
 var name = 'RaspBleWDJ';
 // rsap 의  Rasp() 의 events.EventEmitter.call(this); 와 데이터 셋팅
-var raspService = new RaspService(new rsap.Rasp());
+var raspService = new RaspService(new rasp.Rasp());
 
 bleno.on('stateChange', function(state) {
   if (state === 'poweredOn') {

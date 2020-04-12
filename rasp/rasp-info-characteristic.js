@@ -1,5 +1,5 @@
 var util = require('util');
-var bleno = require('../..');
+var bleno = require('../');
 var rasp = require('./rasp');
 
 function RaspInfoCharacteristic(rasp) {
